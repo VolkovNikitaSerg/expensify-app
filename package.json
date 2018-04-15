@@ -5,8 +5,10 @@
   "author": "Nikita Volkov",
   "license": "MIT",
   "scripts": {
+    "serve": "live-server public/",
     "server": "webpack-dev-server",
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "test": "jest"
   },
   "dependencies": {
@@ -19,6 +21,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^0.28.10",
+    "extract-text-webpack-plugin": "3.0.0",
     "jest": "^22.4.3",
     "live-server": "^1.2.0",
     "moment": "2.18.1",
