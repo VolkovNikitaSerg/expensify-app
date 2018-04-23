@@ -1,7 +1,5 @@
 import * as firebase from "firebase";
 
-console.log("Worked");
-
 // Initialize Firebase
 const config = {
     apiKey: "AIzaSyC0vc8mZMEdMbXdbax1Cfd2q2YE-Dsu-OE",
@@ -13,7 +11,6 @@ const config = {
 };
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-    name: "Nikita Volkov",
-    age: "16"
-});
+const database = firebase.database();
+
+export { firebase, database as default }
